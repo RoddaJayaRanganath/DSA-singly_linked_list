@@ -16,5 +16,5 @@ void ond(struct node **head)
 	if(temp!=NULL)
 		temp->next = NULL;
 	
-	
+	// done some changes unnessarly , let's what will happen.
 }
