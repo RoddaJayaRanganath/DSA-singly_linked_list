@@ -15,6 +15,6 @@ void ond(struct node **head)
 	}
 	if(temp!=NULL)
 		temp->next = NULL;
-	
+		// i don't care git hub changes, since my changes are exceptional right.
 	
 }
