@@ -1,0 +1,20 @@
+void ond(struct node **head)
+{
+	if(*head == NULL)
+		return;
+	*head = (*head)->next;
+	struct node *temp = *head;
+	while(temp!=NULL && temp->next!=NULL&& temp->next->next!=NULL)
+	{
+		struct node *dummy = temp->next;
+		temp->next = temp->next->next;
+		free(dummy);
+		dummy = NULL:
+ 		temp->next = temp->next->next;
+		temp = temp->next;
+	}
+	if(temp!=NULL)
+		temp->next = NULL;
+	
+	
+}
